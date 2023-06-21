@@ -1,0 +1,91 @@
+div.staticTable {
+    border: 1px transparent;
+    background-color: transparent;
+    position: relative;
+    top: 81%; left: 17%;
+    width: 15%;
+    height: auto;
+    text-align: left;
+    border-collapse: collapse;
+    font-size: 1vw;
+    color:#fd0000;
+  }
+  .divTable.staticTable .divTableCell, .divTable.staticTable .divTableHead {
+    padding: 3px 2px;
+  }
+  .divTable.staticTable .divTableBody .divTableCell {
+    font-size: 100vw;
+  }
+  .staticTable .tableFootStyle {
+    font-size: 100vw;
+  }
+  .staticTable .tableFootStyle .links {
+       text-align: right;
+  }
+  .staticTable .tableFootStyle .links a{
+    display: inline-block;
+    background: transparent;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+  .staticTable.outerTableFooter {
+    border-top: none;
+  }
+  .staticTable.outerTableFooter .tableFootStyle {
+    padding: 3px 5px; 
+  }
+  /* DivTable.com */
+  .divTable{ display: table; }
+  .divTableRow { display: table-row; }
+  .divTableHeading { display: table-header-group;}
+  .divTableCell, .divTableHead { display: table-cell;}
+  .divTableHeading { display: table-header-group;}
+  .divTableFoot { display: table-footer-group;}
+  .divTableBody { display: table-row-group;}
+
+  @-o-keyframes highlightBg {
+    0% {
+        background: #fff
+    }
+    50% {
+        background: #FF4081
+    }
+    to {
+        background: #fff
+    }
+}
+
+@-webkit-keyframes highlightBg {
+    0% {
+        background: #fff
+    }
+    50% {
+        background: #FF4081
+    }
+    to {
+        background: #fff
+    }
+}
+
+@keyframes highlightBg {
+    0% {
+        background: #fff
+    }
+    50% {
+        background: #FF4081
+    }
+    to {
+        background: #fff
+    }
+}
+
+.highlight {
+/*     box-shadow: 0 0 0 2px #FF4081; */
+  -webkit-animation: highlightBg 1s linear;
+  -o-animation: highlightBg 1s linear;
+  animation: highlightBg 1s linear;
+  -webkit-animation-iteration-count: 3;
+  -o-animation-iteration-count: 3;
+  animation-iteration-count: 3
+}
